@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+        <EditText
+            android:id="@+id/emailTxt"
+            android:layout_width="315dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="32dp"
+            android:paddingLeft="20dp"
+            android:background="#FFF5FD"
+            android:ems="10"
+            android:hint="xyz@gmail.com"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/passwordTxt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <Button
+            android:id="@+id/signInBtn"
+            android:layout_width="130dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="59dp"
+            android:layout_marginEnd="38dp"
+            android:onClick="signIn"
+            android:text="Giriş Yap"
+            app:layout_constraintEnd_toStartOf="@+id/signUpBtn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/signUpBtn" />
+
+        <Button
+            android:id="@+id/signUpBtn"
+            android:layout_width="130dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="51dp"
+            android:layout_marginBottom="160dp"
+            android:background="@android:color/white"
+            android:onClick="signUp"
+            android:text="Kayıt Ol"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/signInBtn"
+            app:layout_constraintTop_toBottomOf="@+id/passwordTxt" />
+
+        <EditText
+            android:id="@+id/passwordTxt"
+            android:layout_width="315dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="42dp"
+            android:background="#FFF5FD"
+            android:ems="10"
+            android:paddingLeft="20dp"
+            android:hint="********"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/signUpBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailTxt" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="282dp"
+            android:layout_height="235dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="31dp"
+            app:layout_constraintBottom_toTopOf="@+id/emailTxt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/gezmekgerek_logo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
